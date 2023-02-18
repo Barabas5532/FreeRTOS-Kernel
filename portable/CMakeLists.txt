@@ -826,6 +826,7 @@ target_include_directories(freertos_kernel_port PUBLIC
     # Posix Simulator port for GCC
     $<$<STREQUAL:${FREERTOS_PORT},GCC_POSIX>:
         ${CMAKE_CURRENT_LIST_DIR}/ThirdParty/GCC/Posix
+        ${CMAKE_CURRENT_LIST_DIR}/ThirdParty/GCC/Posix/freertos
         ${CMAKE_CURRENT_LIST_DIR}/ThirdParty/GCC/Posix/utils>
 
     # Xtensa LX / Espressif ESP32 port for GCC

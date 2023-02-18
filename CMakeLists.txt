@@ -239,6 +239,7 @@ add_library(freertos_kernel STATIC
 target_include_directories(freertos_kernel
     PUBLIC
         include
+        include/freertos
         # Note: DEPRECATED but still supported, may be removed in a future release.
         $<$<NOT:$<TARGET_EXISTS:freertos_config>>:${FREERTOS_CONFIG_FILE_DIRECTORY}>
 )
